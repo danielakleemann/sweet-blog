@@ -1,0 +1,9 @@
+# IDE preferences
+.idea/
+.vscode/
+
+# Composer packages
+vendor/
+
+# Generated cache files
+*.cache
