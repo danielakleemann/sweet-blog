@@ -1,0 +1,43 @@
+{
+    "name": "sweet-blog/sweet-blog",
+    "description": "A sweet blog publishing application.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniela Kleemann",
+            "email": "dk@webcodingcafe.com"
+        }
+    ],
+    "type": "project",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "SweetBlog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Tests\\Unit\\": "tests/unit/",
+            "Tests\\Integration\\": "tests/integration/"
+        }
+    },
+    "require": {
+        "php": "^8.4",
+        "ext-pdo_mysql": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "11.5.2",
+        "phpstan/phpstan": "2.1.0",
+        "phpstan/phpstan-phpunit": "2.0.3",
+        "phpstan/phpstan-strict-rules": "2.0.1",
+        "friendsofphp/php-cs-fixer": "v3.66.0"
+    },
+    "scripts": {
+        "test": "phpunit --testsuite=default --colors=never",
+        "test-unit": "phpunit --testsuite=unit --colors=never",
+        "test-integration": "phpunit --testsuite=integration --colors=never",
+        "stan": "phpstan analyse --no-progress --no-ansi",
+        "check-style": "php-cs-fixer check --diff --show-progress=none"
+    }
+}

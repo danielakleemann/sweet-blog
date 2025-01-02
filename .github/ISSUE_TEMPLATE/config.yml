@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ideas and suggestions
+    url: https://github.com/sweet-blog/sweet-blog/discussions
+    about: 'For ideas and suggestions, start a new discussion.'
